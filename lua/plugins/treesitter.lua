@@ -1,21 +1,15 @@
 return {
   'nvim-treesitter/nvim-treesitter',
   build = ':TSUpdate',
+  lazy = false,
   config = function()
-    local configs = require("nvim-treesitter")
-    configs.setup({
-      highlight = {
-	enable = true,
-      },
-      indent = { enable = true },
-      autotage = { enable = true },
-      ensure_installed = {
-	"lua",
-	"tsx",
-	"typescript",
-	"rust",
-      },
-      auto_install = false,
+    require('nvim-treesitter').install({
+      'lua',
+      'tsx',
+      'typescript',
+      'rust',
+      'dockerfile',
+      'yaml',
     })
   end
 }
