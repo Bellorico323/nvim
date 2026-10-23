@@ -10,6 +10,7 @@ return {
       'rust',
       'dockerfile',
       'yaml',
+      'prisma',
     })
   end
 }

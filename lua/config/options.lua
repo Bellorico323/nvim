@@ -1,3 +1,5 @@
+vim.filetype.add({ extension = { prisma = "prisma" } })
+
 vim.opt.number = true
 vim.opt.fillchars = { eob = " " }
 vim.opt.cursorline = true

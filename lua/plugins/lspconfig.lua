@@ -15,6 +15,7 @@ return {
           "rust_analyzer",
           "dockerls",
           "docker_compose_language_service",
+          "tailwindcss",
         },
       })
     end,
@@ -29,6 +30,7 @@ return {
         "rust_analyzer",
         "dockerls",
         "docker_compose_language_service",
+        "tailwindcss",
       }
 
       for _, server in ipairs(servers) do
